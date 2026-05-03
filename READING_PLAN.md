@@ -33,8 +33,8 @@
 
 | 完成 | 章節 | 主題 | 筆記 |
 |------|------|------|------|
-| `[ ]` | Chapter 01 | Prompt Chaining — 提示鏈 | |
-| `[ ]` | Chapter 02 | Routing — 路由 | |
+| `[x]` | Chapter 01 | Prompt Chaining — 提示鏈 | |
+| `[x]` | Chapter 02 | Routing — 路由 | |
 | `[ ]` | Chapter 03 | Parallelization — 平行化 | |
 | `[ ]` | Chapter 04 | Reflection — 自我反思 | |
 | `[ ]` | Chapter 05 | Tool Use — 工具使用 | |
