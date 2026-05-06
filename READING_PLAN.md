@@ -24,7 +24,7 @@
 | `[~]` | 閱讀中 |
 | `[x]` | 已完成 |
 
-**完成進度**：0 / 21 章，0 / 9 附錄
+**完成進度**：3 / 21 章，0 / 9 附錄
 
 ---
 
@@ -35,7 +35,7 @@
 |------|------|------|------|
 | `[x]` | Chapter 01 | Prompt Chaining — 提示鏈 | |
 | `[x]` | Chapter 02 | Routing — 路由 | |
-| `[ ]` | Chapter 03 | Parallelization — 平行化 | |
+| `[x]` | Chapter 03 | Parallelization — 平行化 | |
 | `[ ]` | Chapter 04 | Reflection — 自我反思 | |
 | `[ ]` | Chapter 05 | Tool Use — 工具使用 | |
 | `[ ]` | Chapter 06 | Planning — 規劃 | |
