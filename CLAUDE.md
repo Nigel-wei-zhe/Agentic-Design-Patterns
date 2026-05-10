@@ -12,20 +12,12 @@
 章節確認完成後，依序執行：
 1. 更新 `READING_PLAN.md` 進度
 2. 在 `chapter_notes/` 建立該章節的 `.md` 筆記，記錄重點概念、完整 Q&A 與回饋
-3. commit 並 push 當前分支
-4. 對 `main` 發 Pull Request
-5. 切回 `main`，為下一章建立新分支，再繼續
+3. commit 並 push 到 `reading` 分支
 
 ## Git 分支規則
 
-- **每章一個獨立分支**，章節完成後發 PR 合併進 `main`，再開下一章的分支
-- 分支命名格式：`chapter-NN-topic`（全小寫、用連字號、**不含斜線**）
-  - 範例：`chapter-06-planning`、`chapter-07-multi-agent`
-- 開始新章節前，先確認目前在 `main` 且已是最新：
-  ```bash
-  git checkout main && git pull origin main
-  git checkout -b chapter-NN-topic
-  ```
+- 所有閱讀進度統一 commit 到 **`reading`** 分支，`main` 不動
+- 每章完成後只需 `git push origin reading`，不需發 PR
 
 ## 偏好設定
 - 語言：繁體中文為主，英文術語保留原文
