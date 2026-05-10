@@ -24,7 +24,7 @@
 | `[~]` | 閱讀中 |
 | `[x]` | 已完成 |
 
-**完成進度**：4 / 21 章，0 / 9 附錄
+**完成進度**：5 / 21 章，0 / 9 附錄
 
 ---
 
@@ -37,7 +37,7 @@
 | `[x]` | Chapter 02 | Routing — 路由 | |
 | `[x]` | Chapter 03 | Parallelization — 平行化 | |
 | `[x]` | Chapter 04 | Reflection — 自我反思 | |
-| `[ ]` | Chapter 05 | Tool Use — 工具使用 | |
+| `[x]` | Chapter 05 | Tool Use — 工具使用 | |
 | `[ ]` | Chapter 06 | Planning — 規劃 | |
 | `[ ]` | Chapter 07 | Multi-Agent — 多代理人 | |
 
