@@ -1,7 +1,7 @@
 # Agentic Design Patterns — 學習專案
 
 ## 專案說明
-閱讀《Agentic Design Patterns》(Antonio Gulli) 並實作各章節的 Jupyter notebooks。
+閱讀《Agentic Design Patterns》 (Antonio Gulli) 並實作各章節的 Jupyter notebooks。
 
 ## 學習流程
 每一小節分三個階段：
@@ -12,12 +12,12 @@
 章節確認完成後，依序執行：
 1. 更新 `READING_PLAN.md` 進度
 2. 在 `chapter_notes/` 建立該章節的 `.md` 筆記，記錄重點概念、完整 Q&A 與回饋
-3. commit 並 push 到 `reading` 分支
+3. commit 並 push 到 `notes` 分支
 
 ## Git 分支規則
 
-- 所有閱讀進度統一 commit 到 **`reading`** 分支，`main` 不動
-- 每章完成後只需 `git push origin reading`，不需發 PR
+- 所有閱讀進度統一 commit 到 **`notes`** 分支，`main` 不動
+- 每章完成後只需 `git push origin notes`，不需發 PR
 
 ## 偏好設定
 - 語言：繁體中文為主，英文術語保留原文
