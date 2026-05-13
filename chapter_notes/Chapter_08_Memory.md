@@ -8,6 +8,7 @@
 
 - Memory 解決 LLM 無狀態的根本限制，讓 Agent 能跨回合、跨 session 保留資訊
 - 記憶不是越多越好：需考量 token 成本、隱私風險、遺忘機制
+- **長 context window ≠ 長期記憶**：擴大 context window 只是擴展了短期記憶的容量，資訊依然是暫時性的（session 結束即消失）且成本高昂；這無法取代真正的持久化記憶（SessionService / MemoryService）
 
 ## 四種記憶層次
 
@@ -56,7 +57,7 @@ VertexAiRagMemoryService → GCP 生產，向量相似度語意搜尋
 
 ## 延伸討論：何時選 Memory Service 而非 Session？
 
-> ⚠️ 此段為架構邏輯推論，非原書內容（原書 PDF 目前無法解析）
+> 此段為補充討論，結合原書架構邏輯整理
 
 **選 Session 的條件：資料有固定結構，存取模式可預測**
 

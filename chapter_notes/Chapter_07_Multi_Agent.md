@@ -13,7 +13,24 @@
   - Ch03 Parallelization → Parallel
   - Ch04 Reflection Loop → Loop
 
-## 四種編排架構
+## 六種協作形式
+
+原書列出比四種架構更完整的協作類型：
+
+| 協作形式 | 說明 |
+|----------|------|
+| Sequential | 子 Agent 依序執行，有資料依賴 |
+| Parallel | 子 Agent 同時執行，互相獨立 |
+| Coordinator | 主 Agent 根據語意動態路由 |
+| Loop | 反覆執行直到條件滿足 |
+| **Debate & Consensus** | 多個 Agent 各持不同立場辯論，最後形成共識；適合需要多角度審視的決策 |
+| **Expert Teams** | 不同專業領域的 Agent 組成團隊，各自負責自己的專長領域再協作整合 |
+
+## 系統穩健性
+
+Multi-Agent 架構的重要優點之一：**單一 Agent 失敗不等於整體失敗**。分散式架構讓系統在部分元件失效時仍能繼續運作，提升整體穩健性（robustness）。
+
+## 四種編排架構（ADK 實作）
 
 ### 1. Coordinator（協調者）
 - 主 LlmAgent 根據輸入語意動態決定派給哪個子 Agent

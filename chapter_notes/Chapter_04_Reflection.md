@@ -5,8 +5,9 @@
 
 ## 重點概念
 
-- Reflection 將 LLM 拆成兩個角色：**Generator（生成者）** 和 **Reflector（反思者）**
+- Reflection 將 LLM 拆成兩個角色：**Generator（生成者）** 和 **Reflector（反思者）**，原書亦稱此為 **Generator-Critic** 或 **Producer-Reviewer** 模型
 - 兩個角色可以是同一個 LLM（用不同 prompt 驅動），也可以是獨立 Agent
+- 核心動機：LLM 存在**認知偏見（cognitive bias）**——自己產生的輸出往往覺得「夠好了」，難以客觀批判；角色分離強制引入外部視角，降低這種偏見
 - 核心價值：角色分離降低偏見，讓系統具備自我驗證與漸進改善的能力
 
 ## 兩種架構

@@ -6,8 +6,17 @@
 ## 重點概念
 
 - Tool Use 讓 LLM 從「只能說話」進化到「能採取行動」
-- LLM 本身無法直接執行工具，而是由執行環境（AgentExecutor / Runner）負責呼叫並回傳結果
+- LLM 本身無法直接執行工具，而是由執行環境（AgentExecutor / Runner）負責呼叫並回傳結果；LLM 呼叫工具時輸出的是 **JSON 格式**的呼叫指令，由執行環境解析後實際執行
 - 工具呼叫循環可重複多次（多輪），直到 LLM 判斷資訊足夠才輸出最終答案
+
+## Function Calling vs Tool Calling
+
+| 概念 | 說明 |
+|------|------|
+| **Function Calling** | 較狹義：LLM 呼叫預先定義的特定函式 |
+| **Tool Calling** | 較廣義：工具可以是 API、資料庫查詢、程式碼執行，甚至**另一個 Agent** |
+
+原書明確區分這兩個術語。Function Calling 是 Tool Calling 的子集；現代 Agentic 系統中，工具的概念已大幅擴展——其他 Agent 也可以作為工具被呼叫，形成巢狀的 Agent 架構。
 
 ## 工具呼叫流程
 
