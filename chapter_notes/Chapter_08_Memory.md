@@ -54,6 +54,27 @@ VertexAiRagMemoryService → GCP 生產，向量相似度語意搜尋
 
 具體例子：使用者說「我喜歡短句」存進 MemoryService，之後 query `"language preferences"` 就能找到，就算措辭不同也能匹配。這用 Session State 的 key-value 做不到。
 
+## 延伸討論：何時選 Memory Service 而非 Session？
+
+> ⚠️ 此段為架構邏輯推論，非原書內容（原書 PDF 目前無法解析）
+
+**選 Session 的條件：資料有固定結構，存取模式可預測**
+
+Session 是 key-value，存取都要精確指定 key，設計時就必須預先決定資料名稱。
+適合的資料：`task_status`、`step`、`user_id` 等有明確結構、之後知道要查哪個 key 的資料。
+
+**選 Memory Service 的條件：資料是自然語言，未來需求無法預測**
+
+Memory Service 的核心優勢是語意搜尋——不需要預先知道 key，只描述「我要找什麼類型的資訊」。
+適合的資料：使用者在第 3 次對話說過「我不吃辣」、第 7 次說過「我偶好簡短的回答」。
+這些無法預測什麼時候需要，也無法用 key 有效歸類；query 「飲食偉好」就能搨出，不需記得當時存在哪個 key 下。
+
+**一句話總結：**
+> 資料有固定結構且存取模式可預測 → Session  
+> 資料是自然語言且未來需求無法預測 → Memory Service
+
+這個判斷邏輯與 Ch02 Routing 相似：可預測用規則，不可預測用 LLM。
+
 ## 相關 Notebooks
 
 - `Chapter_08_Memory_(ADK_MemoryService_InMemory).ipynb`
